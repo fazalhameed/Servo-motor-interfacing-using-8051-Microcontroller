@@ -14,7 +14,6 @@ void LCD_Command(unsigned char cmd) {
     en = 0;
     delay(5);
 }
-
 void lcd_write(unsigned char lcd_data) {
     LCD_data = lcd_data;
     rs = 1;
@@ -23,7 +22,6 @@ void lcd_write(unsigned char lcd_data) {
     delay(1);
     en = 0;
 }
-
 void lcd_init() {
     delay(20);      /* LCD Power ON Initialization time >15ms */
     LCD_Command(0x38);  /* Initialization of 16X2 LCD in 8-bit mode */
