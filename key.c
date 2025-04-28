@@ -5,7 +5,6 @@
 
 /* Define value to be loaded in timer for PWM period of 20 milliseconds */
 #define PWM_Period 0xB7FE
-
 sbit Servo_Motor_Pin = P2^0;
 sbit k1 = P3^1; // K1 button connected to P3.1
 sbit k2 = P3^0; // K2 button connected to P3.0
